@@ -15,9 +15,20 @@
     </header>
 
     <main>
+        <?php
 
-    <!-- implementação da solução -->
-     
+            $segundosTotais = 50000; // 1) Quantidade Total de segundos
+
+            $horas = floor($segundosTotais / 3600); // 2) Conversão de segundos para horas
+
+            $restoSegundos = $segundosTotais % 3600; // 3) Resto dos segundos
+
+            $minutos = floor($restoSegundos / 60); // 4) Conversão de segundos para minutos
+
+            $segundosFinais = $restoSegundos % 60; // 5) Resto dos segundos finais
+
+            echo "Duração do evento: $horas horas, $minutos minutos e $segundosFinais segundos.";
+        ?> 
     </main>
 </body>
 

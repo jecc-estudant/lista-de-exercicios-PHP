@@ -15,9 +15,13 @@
     </header>
 
     <main>
+        <?php
+            echo "Números ímpares entre 1 e 50:\n";
 
-    <!-- implementação da solução -->
-     
+            for ($i = 1; $i <= 50; $i += 2) {
+                echo $i . " ";
+            }
+        ?>  
     </main>
 </body>
 

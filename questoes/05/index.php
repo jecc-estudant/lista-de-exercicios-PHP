@@ -15,11 +15,22 @@
     </header>
 
     <main>
+        <?php
+            $num1 = 13;
+            $num2 = 456;
+            $num3 = 22;
 
-    <!-- implementação da solução -->
-     
+            if ($num1 >= $num2 && $num1 >= $num3) {
+                $maior = $num1;
+            } elseif ($num2 >= $num1 && $num2 >= $num3) {
+                $maior = $num2;
+             } else {
+                $maior = $num3;
+            }
+
+            echo "O maior número entre $num1, $num2 e $num3 é: $maior";
+        ?>
     </main>
 </body>
-
 
 </html>
